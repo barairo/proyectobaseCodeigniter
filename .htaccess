@@ -1,5 +1,9 @@
 RewriteEngine On
-RewriteBase /stocknwin
+RewriteBase /stocknwin/ 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteCond $1 !^(index\\.php|resources|css|js|robots\\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
