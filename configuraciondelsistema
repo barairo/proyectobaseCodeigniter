@@ -1,1 +1,32 @@
 Modificar el archivo .htaccess cambiando la base para la url.  linea2
+
+Modificar config.php
+Modificar la linea 26 'http://sitio.com/nombreproyecto/'
+Modificar la linea 38 'index.php' -> ''
+Modificar copiar las siguientes lineas en la linea 370
+  $config['sess_driver'] = 'database';
+  $config['sess_cookie_name'] = 'ci_session';
+  $config['sess_expiration'] = 7200;
+  $config['sess_save_path'] = 'ci_sessions';
+  $config['sess_match_ip'] = FALSE;
+  $config['sess_time_to_update'] = 300;
+  $config['sess_regenerate_destroy'] = FALSE;
+  $config['sess_use_database'] = TRUE;      //se reuiere estas 2 lineas para guardar las sessiones en la base de datos
+  $config['sess_table_name'] = 'ci_sessions';
+  
+  //nota: es importante crear la tabla de ci_sessions
+  
+  
+Modificar el archivo database.php linea 76 para agregar las credenciales de acceso
+
+Modificar el archivo autoload.php linea 61
+    $autoload['libraries'] = array('database','session');
+ linea 92
+    $autoload['helper'] = array('url','html');
+ 
+    
+
+
+
+ 
+ 
