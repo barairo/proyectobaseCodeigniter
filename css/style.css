@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6/01/2017, 03:40:11 PM
+    Author     : jguevara
+*/
+html, body{
+    height: 100%;
+}
+
+.contenedor{                
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    padding-top: 6%;
+}
+
+#anterior{
+    width: 2.5%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content:  flex-end; /* align horizontal */
+    align-items: center; 
+}
+
+#siguiente{
+    width: 2.5%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content:  flex-start; /* align horizontal */
+    align-items: center; 
+}
+
+#contenedorCalendario{
+    float: left;
+    width: 95%;
+    height: 100%; 
+}
+
+#cuerpoCalendario{          
+    
+    float: left;
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%; 
+}
+
+
+
+.celdaCalendario{  
+    border: 1px solid black;
+    margin: 0px;
+    text-align: center;
+    align-items: center; 
+    
+}                         
+
+

@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		  $data['titulo_pagina'] = "Menu Publico";
+                $data['titulo_pagina'] = "Menu Publico";
 		$this->load->view('welcome_message', $data);
 	}
 }
